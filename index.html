@@ -45,7 +45,7 @@
     lock.innerHTML = `
       <div class="panel">
         <h2>💜 KUJININE 💜</h2>
-        <p>0328</p>
+        <p>비밀번호를 입력해주세요!</p>
         <form id="kujinine-form">
           <input id="kujinine-password" type="password"
             placeholder="••••••" autocomplete="off" required>
@@ -57,7 +57,7 @@
     document.body.appendChild(lock);
     document.getElementById("kujinine-form").addEventListener("submit", function (e) {
       e.preventDefault();
-      const password = "여기에새비밀번호입력";
+      const password = "0328";
       const entered = document.getElementById("kujinine-password").value;
       if (entered === password) {
         lock.remove();
